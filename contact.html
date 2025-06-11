@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="contact.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+</head>  
+<body>
+
+  <div class="container">
+
+    <nav>
+      <ul class="nav">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul> 
+    </nav>
+
+   <header>
+    <h1>Contact Makeup by Shasina</h1>
+    <br>
+    <p><b>We'd love to hear from you!</b></p>
+  </header>
+
+  <section class="contact-form">
+    <h2>Send a Message</h2>
+    <form action="#" >
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="service">Service Interested In</label>
+      <select id="service" name="service">
+        <option>Bridal Makeup</option>
+        <option>Party Glam</option>
+        <option>Photoshoot</option>
+        <option>Graduation/Prom</option>
+      </select>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit"><b>Send Message</b></button>
+    </form>
+  </section>
+    <script src="contact.js"></script>
+</body>
+</html>
