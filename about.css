@@ -1,0 +1,166 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body & Fonts */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff0f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #d6336c;
+}
+
+a:hover {
+  color: #a81f4d;
+}
+
+/* Header */
+.header {
+  background-color: #d6336c;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav a {
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav a:hover,
+.nav a.active {
+  background-color: #a81f4d;
+}
+
+/* About Hero Section */
+.about-hero {
+  display: flex;
+  align-items: center;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-hero img {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(214, 51, 108, 0.3);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-text h2 {
+  color: #d6336c;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.about-text p {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+/* Team Section */
+.team {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.team h2 {
+  color: #d6336c;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 250px;
+  box-shadow: 0 5px 15px rgba(214, 51, 108, 0.15);
+  transition: transform 0.3s;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  color: #a81f4d;
+  margin-bottom: 8px;
+}
+
+.team-member p {
+  font-style: italic;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #d6336c;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-hero {
+    flex-direction: column;
+  }
+
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+  }
+}

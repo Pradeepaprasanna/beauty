@@ -1,0 +1,121 @@
+/* Reset and global box sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  background-image: url('mkih.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px; /* prevent content touching edges */
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation styles */
+.nav {
+  color: transparent;
+  float: left;
+  display: flex;
+  margin: 20px 5vw; /* responsive horizontal margin */
+}
+
+.nav li {
+  display: flex;
+  margin: 0 2vw;
+  list-style: none;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: rgb(12, 12, 12);
+  font-size: 21px;
+}
+
+.nav li a:hover {
+  color: rgb(245, 247, 244);
+  transform: scale(1.2);
+  transition: transform 2s ease-in-out;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: black;
+}
+
+/* Services intro section */
+.services-intro {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 0 20px;
+  color: #d6336c;
+}
+
+.services-intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.services-intro p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Services cards container */
+.services-list {
+  max-width: 1100px;
+  margin: 30px auto 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+/* Individual service card */
+.service-card {
+  background: #fff0f6;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(214, 51, 108, 0.2);
+  width: 260px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  color: #a81f4d;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .services-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .service-card {
+    width: 90%;
+    max-width: 400px;
+  }
+}
